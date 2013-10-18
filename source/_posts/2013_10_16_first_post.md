@@ -3,4 +3,4 @@ date: 2013-10-16 16:43:49
 tags:
 ---
 
-Welcome to CN blog.
+Welcome to CN blog. Version 2.
