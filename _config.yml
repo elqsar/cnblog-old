@@ -73,7 +73,7 @@ disqus_shortname: cnblog-cz
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: light
+theme: twbootstrap
 exclude_generator:
 
 # Deployment
