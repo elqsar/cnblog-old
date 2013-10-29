@@ -44,7 +44,13 @@
   <link href="<%- config.root %>favicon.png" rel="icon">
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
-
+  <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+         filter: none;
+      }
+    </style>
+  <![endif]-->
   <!--style>
     figure.highlight table tbody tr td.code {
       width: 100%

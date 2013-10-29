@@ -1,20 +1,21 @@
-<div class="navbar navbar-fixed-top <% if (theme.bs_nav_inverse) { %>navbar-inverse <%}%>" role="navigation">
-  <div class="container">
+<div class="logo">
+  <a href="#"><img src="/img/cn-group-logo.png" alt=""></a>
+</div>
+<nav class="navbar navbar-default <% if (theme.bs_nav_inverse) { %>navbar-inverse <%}%>" role="navigation">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <% if (theme.gravatar) { %>
-      <span class="brand">
-        <a class="navbar-brand" href="<%- config.root %>"><img id="gravatar_nav" src="http://www.gravatar.com/avatar/<%-theme.gravatar%>.jpg?s=50"/><%- config.title %></a>
-      </span>
+      <a class="navbar-brand" href="<%- config.root %>"><img id="gravatar_nav" src="http://www.gravatar.com/avatar/<%-theme.gravatar%>.jpg?s=50"/><%- config.title %></a>
       <% } else { %>
       <a class="navbar-brand" href="<%- config.root %>"><%- config.title %></a>
       <% } %>
     </div>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
         <% for (var i in theme.menu){ %>
           <li><a href="<%- theme.menu[i] %>"><%- i %></a></li>
@@ -36,7 +37,8 @@
         <li><a href="https://github.com/jmervine<%- theme.twitter_id %>">github</a></li>
       <% } %>
       </ul>
+      <div class="pull-right search">
+        <%- partial('_widget/search') %>
+      </div>
     </div>
-  </div>
-</div>
-
+</nav>
