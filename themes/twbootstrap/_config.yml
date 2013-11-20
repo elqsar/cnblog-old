@@ -93,7 +93,7 @@ widgets:
 
 # For use with tagcloud or tag widgets
 # - only tags >= to tag_minium are shown
-tag_minium: 5
+tag_minium: 1
 
 excerpt_link: read more
 
