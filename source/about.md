@@ -1,4 +1,4 @@
 title: About this blog
 ---
 
-Lorem ipsum?
+Ipsum Lorem!
