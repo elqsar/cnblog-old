@@ -81,7 +81,9 @@ git svn rebase
 git svn dcommit
 ```
 
-A to je už vážně vše. Vypněte SVN server, uzamkněte zpět anonymní přístup. Možná vám cestou někde něco selže. Nepropadejte panice, zavolejte nový dcommit a pokračujte dál (tedy po další vlně čekání způsobené automatickým rebase).
+A to je už vážně vše. Vypněte SVN server, uzamkněte zpět anonymní přístup.
+
+Možná vám cestou někde něco selže. Nepropadejte panice, zavolejte nový dcommit a pokračujte dál (tedy po další vlně čekání způsobené automatickým rebase).
 Typický problém je například takovýto
 ```
 r31 = 4f431359b2aa088c81823f6daf38a0a558582356 (refs/remotes/svn/trunk)
@@ -89,6 +91,8 @@ No changes
 9ea633c03c90d014d5006a95bc2e228430dafde0~1 == 9ea633c03c90d014d5006a95bc2e228430dafde0
 Unable to extract revision information  from commit ce00defca829acea7cdf8064627f8a60675a41f3~1
 ```
+
+UPDATE: Bohužel jsem se setkal už i s případem, kdy svn rebase nepomáhá. Nezbylo mi než použít podobný trik jako při propojení původní SVN, tedy vytvořit v řetězu jednotlivých commit záznamů zkratku a onen "prázdný" commit přeskočit (viz grafts). To všechno umí GIT!
 
 Budu rád za vaše komentáře, zda vám návod pomohl, nebo jaké máte zkušenosti s přenosem dat mezi různým repozitáři.
 
