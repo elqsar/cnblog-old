@@ -1,6 +1,6 @@
 title: Migrace TFS do SVN
 date: 2013-10-24 09:32:54
-updated: 2013-10-24 10:32:54
+updated: 2014-01-09 20:30:00
 tags: [TFS, SVN, migrace, source code]
 ---
 Dřív nebo později to zažije možná každý vývojář, zákazník chce zdrojové kódy včetně historie a to v jiném formátu než právě používáte.
@@ -34,14 +34,14 @@ Přišel čas na vytažení dat z TFS, tentokrát třeba do adresáře **git**. 
 git tfs clone --all -l --with-branches \
 	http://your_TFS_server/tfs/DefaultCollection \
 	"$/your_project" git
+
+cd git
 	
 git gc
 ```
 
 Následně připojíme SVN jako další repository a sesynchronizujeme data
 ``` bash Připojení SVN repository
-cd git
-
 git svn init -s --prefix=svn/ svn://localhost/svn
 
 git svn fetch
@@ -73,7 +73,7 @@ git filter-branch -- ^svn/trunk --all
 rm .git/info/grafts
 ```
 
-A teď už vážně jen ten poslední krok - linearizace záznamů pro účely SVN a vlastní commit. A zas a znovu - hodně trpělivosti.
+A teď už vážně jen ten poslední krok - linearizace záznamů pro účely SVN (vzpomeňte si, jak je SVN neprižná, co se branchování týče) a vlastní commit. A zas a znovu - hodně trpělivosti.
 
 ``` bash Finalizace
 git svn rebase
