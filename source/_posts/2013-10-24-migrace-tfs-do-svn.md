@@ -1,6 +1,6 @@
 title: Migrace TFS do SVN
-date: 2013-10-24 09:32:54
-updated: 2014-01-09 20:30:00
+date: 2014-01-10 17:25:00
+updated: 2014-01-10 17:25:00
 tags: [TFS, SVN, migrace, source code]
 ---
 Dřív nebo později to zažije možná každý vývojář, zákazník chce zdrojové kódy včetně historie a to v jiném formátu než právě používáte.
