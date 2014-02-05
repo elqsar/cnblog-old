@@ -43,7 +43,6 @@ Takto vypadá definice dashboardu s jedním widgetem, který poslouchá naše de
 ### Náš dashboard
 
 Jelikož používáme Jenkins, měl jsem celkem radost, že už někdo pro Dashing napsal [widget](https://gist.github.com/mavimo/6334816). Trošku jsem ho opravil, abych mohl barevně zdůraznit právě běžící build. Jelikož část týmu je nadále v Londýně, přidali jsme si ještě widget s londýnským časem a nakonec ještě widget s počasím, protože zbylo trochu místa. Zatím poslední přírůstek je oblast, kam může každý poslat libovolnou zprávu, kterou pak vidí celý tým.
-TODO : PNG obrazek
 
 {% img /attachments/2014-02-01-teamovy-dashboard/dashboard.jpg %}
 
