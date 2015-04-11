@@ -1,6 +1,7 @@
 title: Týmový dashboard
 date: 2014-02-01 10:50
 tags: [dashing, dashboard, continuous integration]
+authorId: BST
 ---
 
 Používáte některý z nástrojů pro [Continous Integration](http://cs.wikipedia.org/wiki/Pr%C5%AFb%C4%9B%C5%BEn%C3%A1_integrace)

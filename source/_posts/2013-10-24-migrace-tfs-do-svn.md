@@ -2,6 +2,7 @@ title: Migrace TFS do SVN
 date: 2014-01-10 17:25:00
 updated: 2014-01-10 17:25:00
 tags: [TFS, SVN, migrace, source code]
+authorId: MDO
 ---
 Dřív nebo později to zažije možná každý vývojář, zákazník chce zdrojové kódy včetně historie a to v jiném formátu než právě používáte.
 
