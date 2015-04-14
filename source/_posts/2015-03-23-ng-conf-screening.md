@@ -1,7 +1,7 @@
 title: ng-conf screening
 date: 2015/03/23 12:00
 tags: [angular,a11y,protractor,vzdělávání]
-
+authorId: MSU
 ---
 
 To share some thoughts about ng-conf and life in general we organized a little get-together at the Krakovska premises. With the managerial help of Honza and PR skills of Bob, we had quite a few colleagues attending, some also remotely (guys, did we at least show you all the food and drinks ?).
