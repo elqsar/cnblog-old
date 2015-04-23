@@ -14,12 +14,11 @@ Karta se obvykle narodí na backlog tabuli, kde dostane do vínku krátký popis
 ###Zrození
 Při plánování nové iterace nám **PO** naznačí, které kartičky by rád viděl na naší tabuli. Po krátké diskuzi nad obsahem karty dojde k odhadu složitosti - jelikož je náš tým rozdělen kanálem La Manche a plánuje přes videokonferenci, místo karet jednoduše na prstech ukážeme číslo. Stupnice vypadá přibližně takto:
 
-TODO - zlepsit popisky
 **1** jednoduchý úkol, krátký SQL skript, změna několik řádků bez velkého vlivu na aplikaci - pověstný pětiminutový úkol
 **2** práce, která se může protáhnout na den dva, může zasáhnout více aplikací
 **3** nejčastější velikost, několik dnů práce, větší počet testů, nová drobná vlastnost
-**5** složitější vlastnost, spolupráce s kolegy vývojáři, ne zcela jasné hranice úkolu, klidně i týden práce
-**SPIKE** TODO
+**5** složitější kartička, klidně přes týden práce
+**SPIKE** viz [Agile Dictionary](http://agiledictionary.com/209/spike/)
 
 Větší úkoly se snažíme rozsekat na menší, už dlouho jsem neviděl kartičku se složitostí 8.
 
@@ -57,10 +56,7 @@ Je-li kartička součástí něčeho většího a není ji dáno se ihned předv
 S takovou kartou se vývojář potkává vícekrát, často kvůli dlouhé či nepřímé/nepřesné zpětné vazbě od koncových zákazníků nebo PO.
 
 ### Vývojová vada
-TODO
-
-#### Zeptat se kluku na dalsi typy karet
-TODO
+V průběhu vývoje narazí vývojář na vnější závislost či jiný problém, kvůli kterému se karta přesouvá do sloupce Blocked, kde může strávit neohraničený čas - od pár hodin do několika týdnů.
 
 ## Závěr
 Typický životní cyklus karty je něco přes týden, jelikož **release** je fázově posunut za iterací. Píšu typický - jsou karty, které zesnou dříve, než můžou splatit studentskou půjčku a jsou karty, u kterých má člověk pocit, že snad nikdy nezmizí.
@@ -73,10 +69,7 @@ Typický životní cyklus karty je něco přes týden, jelikož **release** je f
 <a name="BH"></a>`Bug Hunter` 
 > obětní beránek, na kterého se obracejí QA a PO v případě potíží na živých serverech. Nevděčná to role, jejíž obsazení se mění každou iteraci a která chrání zbytek týmu před před náhodnou lavinou dotazů
 
-<a name="defuzz"></a>`Defuzz`
-> TODO
-
 <a name="toggle"></a>`Toggle`
-> TODO
+> Viz [článek Martina Fowlera](http://martinfowler.com/bliki/FeatureToggle.html)
 
  
