@@ -109,7 +109,7 @@ addthis:
   facebook: true
 
 google_analytics:
-rss:
+rss: /rss2.xml
 
 disqus_shortname:
 

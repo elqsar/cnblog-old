@@ -1,7 +1,7 @@
 title: ng-everything
 date: 2015/03/23 12:00
 tags: [angular,css]
-
+authorId : TRE
 ---
 
 There was a [screening](/2015/03/23/ng-conf-screening) of some videos from [ng-conf](http://www.ng-conf.org/) which took place about 10 days ago somewhere in US :) We have - with Mojzis - prepaired few words to kick off a discussion after the screening and I have added some extra code related to [one of those videos](https://www.youtube.com/watch?v=wbcJfg-d5nI&list=PLOETEcp3DkCoNnlhE-7fovYvqwVPrRiY7&index=16).
