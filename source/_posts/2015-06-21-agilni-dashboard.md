@@ -3,7 +3,7 @@ date: 2016/06/21 12:00
 authorId: JCE
 tags: [dashboard, continuous integration]
 ---
-S rostoucí poptávkou po agilních metodikách se rozmohlo i využívání sofistikovanějších nástrojů pro trackování stavu projektu. S některými z nástrojů jako je Jira, Team Foundation Server, Kanbanize či Trello se již dnes setkal asi každý z oblasti vývoje software a není pochyb o tom, že svou roli sledování stavu projektu plní na výbornou. Nicméně každý projekt potřebuje i další nástroje pro týmovou komunikaci či Continues Integration a integrace těchto nástrojů dohromady v dnešní době není… tedy až doposud!
+S rostoucí poptávkou po agilních metodikách se rozmohlo i využívání sofistikovanějších nástrojů pro trackování stavu projektu. S některými z nástrojů jako je Jira, Team Foundation Server, Kanbanize či Trello se již dnes setkal asi každý z oblasti vývoje software a není pochyb o tom, že svou roli sledování stavu projektu plní na výbornou. Nicméně každý projekt potřebuje i další nástroje pro týmovou komunikaci či Continuous Integration a integrace těchto nástrojů dohromady v dnešní době není… tedy až doposud!
 
 <!-- more -->
 
