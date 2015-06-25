@@ -1,5 +1,5 @@
 title: Agilní dashboard 2.0
-date: 2016/06/21 12:00
+date: 2015/06/21 12:00
 authorId: JCE
 tags: [dashboard, continuous integration]
 ---
@@ -39,7 +39,6 @@ Tříčlenný tým ve dvoutýdenních iteracích neustále vyvíjí nové metrik
 *    Burndown chart (Sprint / Projekt)
 *     Velocity
 *     Build history
-*     Nové vs
 *     Open vs total User Stories
 *     Impediment list
 *     Code coverage
