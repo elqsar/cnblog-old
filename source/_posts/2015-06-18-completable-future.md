@@ -5,7 +5,7 @@ authorId: BMU
 
 ### Introduction
 
-There is the trend in last years chasing the high application availability. It's really rare to see our application working in vacuum, more often it's using another couple of services its depends on, aggregating and transforming their contents. And sloppiness any of these could really hurt performance of the whole. The last thing you want in this situation is to leave your application waiting to response from slow service and waste the valuable cpus cycles and blocking threads. The Java language try hard to provide us with tools of trade: Fork/Join framework was added to Java 7 and Parallel Stream to Java 8. All of them help us to be more productive working in highly concurrent environment by creating the right level of abstraction that makes our work more easy and less error prone. In this article i'll try to introduce you the new concept of CompletableFuture in Java 8.
+There is the trend in last years chasing the high application availability. It's really rare to see our application working in vacuum, more often it's using another couple of services its depends on, aggregating and transforming their contents. And sloppiness any of these could really hurt performance of the whole. The last thing you want in this situation is to leave your application waiting for response from slow service and waste the valuable cpus cycles and blocking threads. The Java language try hard to provide us with tools of trade: Fork/Join framework was added to Java 7 and Parallel Stream to Java 8. All of them help us to be more productive working in highly concurrent environment by creating the right level of abstraction that makes our work more easy and less error prone. In this article I'll try to introduce you the new concept of CompletableFuture in Java 8.
 
 <!-- more -->
 
@@ -32,13 +32,13 @@ However, futures are rather limited. Probably you can spot the problem here. If 
 CompletableFuture was introduced in Java 8. Also it was available even before Java 8 in Guava or Spring Framework as the <code>ListenableFuture</code>. And here just few examples what we can do with CompletableFuture:
 
 1. Combine several asynchronous operation
-2. Waiting for task completion
+2. Wait for task completion
 3. Listen to Future completion and react to it success or error completion
 4. Chaining results of dependent futures
 
 And many more. For more info check JavaDocs for [CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html) and [CompletionStage](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html).
 
-To better describe this concept I have created simple [application](https://github.com/elqsar/completablefuture-examples) you can follow. The application simulate pretty slow API calls and how we can fight with it.
+To better describe this concept I have created simple [application](https://github.com/elqsar/completablefuture-examples) you can follow. The application simulates pretty slow API calls and how we can fight with it.
 
 Application initial setup:
 
@@ -62,7 +62,7 @@ public static List<PriceRecord> findPricesBlock() {
 }
 ```
 
-If you comfortable with Stream API you could guess how we can improve it with very little effort.By using the parallelStream. And this small change improve final result to **6051** ms. Good job!
+If you are comfortable with Stream API you could guess how we can improve it with very little effort. By using the parallelStream. And this small change improve final result to **6051** ms. Good job!
 
 ```Java
 public static List<PriceRecord> findPricesParallel() {
