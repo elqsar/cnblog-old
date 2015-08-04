@@ -1,5 +1,5 @@
 title: Gentle introduction to Completable Future
-date: 2015/06/18 12:00
+date: 2015/08/04 12:00
 authorId: BMU
 ---
 
