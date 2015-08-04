@@ -73,7 +73,7 @@ public static List<PriceRecord> findPricesParallel() {
 }
 ```
 
-Let's see if we could do better with CompletableFuture. In the next step we create it with factory method <code>supplyAsync(...)</code>, so our code will be executed in different thread. After this we want to apply discount to all prices, also in separate thread and <code>thenCompose(...)</code> method do heavy lifting for us. People who are familiar with [Scala Futures](http://docs.scala-lang.org/overviews/core/futures.html) could recognize that this one very similar to <code>flatMap</code>. Also notice we have two separate streams here.Becasue of lazy nature of streams all requests to Shop API would be executed sequentially if we were using pipeline instead.
+Let's see if we could do better with CompletableFuture. In the next step we create it with factory method <code>supplyAsync(...)</code>, so our code will be executed in different thread. After this we want to apply discount to all prices, also in separate thread and <code>thenCompose(...)</code> method do heavy lifting for us. People who are familiar with [Scala Futures](http://docs.scala-lang.org/overviews/core/futures.html) could recognize that this one very similar to <code>flatMap</code>. Also notice we have two separate streams here. Becasue of lazy nature of streams all requests to Shop API would be executed sequentially if we were using pipeline instead.
  
 > Most of CompletableFuture methods used in this article are non-blocking.
 
@@ -116,7 +116,7 @@ Another useful pair of methods <code>thenAccept/thenRun</code>, which you could 
 
 ### Summary
 
-And it is the end of examples but not <code>CompletableFuture</code>. It contains the much more useful methods inside, for example for asynchronous exeption handling, combining futures together, waiting for completion and much more. In this small article i've just introduced the most common and it's up to the reader to explore it further. 
+And it is the end of examples but not <code>CompletableFuture</code>. It contains the much more useful methods inside, for example for asynchronous exeption handling, combining futures together, waiting for completion and much more. In this small article I've just introduced the most common and it's up to the reader to explore it further. 
 
 Hints:
 
